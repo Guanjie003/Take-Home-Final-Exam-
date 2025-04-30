@@ -54,7 +54,7 @@ const DashboardScreen = ({ navigation }) => {
     return cur.type === 'income' ? acc + cur.amount : acc - cur.amount;
   }, 0);
 
-  // ✅ แจ้งเตือนถ้าใช้เงินเกินงบ
+  // แจ้งเตือนถ้าใช้เงินเกินงบ
   useEffect(() => {
     const budget = getBudget ? getBudget(currentMonth) : 0;
     const checkSpendingAndNotify = async () => {
