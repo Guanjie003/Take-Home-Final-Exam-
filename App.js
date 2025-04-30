@@ -44,14 +44,25 @@ export default function App() {
               drawerLabelStyle: { 
                 fontSize: 16,
                 fontWeight: '500',
-                marginLeft: -20,
+                marginLeft: 12,
               },
               drawerItemStyle: {
-                marginVertical: 5,
+                marginVertical: 4,
                 borderRadius: 8,
-                marginHorizontal: 10,
+                marginHorizontal: 12,
+                paddingLeft: 8,
               },
               drawerActiveBackgroundColor: '#E3F2FD',
+              drawerContentContainerStyle: {
+                paddingTop: 70,
+              },
+              drawerIconContainerStyle: {
+                marginRight: 0,
+                width: 24,
+                height: 24,
+                justifyContent: 'center',
+                alignItems: 'center',
+              },
             }}
           >
             <Drawer.Screen 
@@ -59,7 +70,7 @@ export default function App() {
               component={DashboardScreen}
               options={{
                 drawerIcon: ({ color }) => (
-                  <Icon name="dashboard" size={24} color={color} />
+                  <Icon name="dashboard" size={28} color={color} style={{ marginRight: -8 }} />
                 ),
               }}
             />
@@ -68,7 +79,7 @@ export default function App() {
               component={AddTransactionScreen}
               options={{
                 drawerIcon: ({ color }) => (
-                  <Icon name="add-circle" size={24} color={color} />
+                  <Icon name="add-circle" size={28} color={color} style={{ marginRight: -8 }} />
                 ),
               }}
             />
@@ -77,7 +88,7 @@ export default function App() {
               component={SavingsScreen}
               options={{
                 drawerIcon: ({ color }) => (
-                  <Icon name="savings" size={24} color={color} />
+                  <Icon name="savings" size={28} color={color} style={{ marginRight: -8 }} />
                 ),
               }}
             />
@@ -86,7 +97,7 @@ export default function App() {
               component={AnalyticsScreen}
               options={{
                 drawerIcon: ({ color }) => (
-                  <Icon name="analytics" size={24} color={color} />
+                  <Icon name="analytics" size={28} color={color} style={{ marginRight: -8 }} />
                 ),
               }}
             />
@@ -95,7 +106,7 @@ export default function App() {
               component={BudgetScreen}
               options={{
                 drawerIcon: ({ color }) => (
-                  <Icon name="account-balance-wallet" size={24} color={color} />
+                  <Icon name="account-balance-wallet" size={28} color={color} style={{ marginRight: -8 }} />
                 ),
               }}
             />
@@ -104,7 +115,7 @@ export default function App() {
               component={HistoryScreen}
               options={{
                 drawerIcon: ({ color }) => (
-                  <Icon name="history" size={24} color={color} />
+                  <Icon name="history" size={28} color={color} style={{ marginRight: -8 }} />
                 ),
               }}
             />

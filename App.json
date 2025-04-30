@@ -1,0 +1,16 @@
+{
+    "expo": {
+      "name": "SmartFinance",
+      "slug": "smartfinance",
+      "icon": "./assets/icon.png",
+      "extra": {
+        "eas": {
+          "projectId": "b9879822-9739-4e68-852e-696f70e42fd6"
+        }
+      },
+      "android": {
+        "package": "com.guanjie.smartfinance"
+      }
+    }
+  }
+  
